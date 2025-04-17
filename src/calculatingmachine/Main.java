@@ -12,16 +12,33 @@ public class Main {
             System.out.print("두 번째 숫자를 입력하세요: ");
             int intbox2 = sc.nextInt();
 
-            int val = intbox1 + intbox2;
-            System.out.println("값: " + val);
+            System.out.print("사칙연산 기호를 입력하세요: ");
+            String strbox = sc.next();
+
+            if (strbox.equals("+")) {
+                int val = intbox1 + intbox2;
+                System.out.println("값: " + val);
+            }
+            if (strbox.equals("-")) {
+                int val = intbox1 - intbox2;
+                System.out.println("값: " + val);
+            }
+            if (strbox.equals("*")) {
+                int val = intbox1 * intbox2;
+                System.out.println("값: " + val);
+            }
+            if (strbox.equals("/")) {
+                int val = intbox1 / intbox2;
+                System.out.println("값: " + val);
+            }
 
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
             String exitbox = sc.next();
-            if (!exitbox.equals("exit")) {
-                continue;
-            }   else {
+            if (exitbox.equals("exit")) {
                 System.out.println("장비를 정지합니다.");
                 break;
+            }   else {
+                continue;
             }
 
         }
