@@ -1,4 +1,4 @@
-package com.example.calculator;
+package lv1;
 
 import java.util.Scanner;
 
@@ -34,6 +34,9 @@ public class Calculator {
                     int val = intbox1 / intbox2;
                     System.out.println("값: " + val);
                 }
+            } else {
+                System.out.println("유효하지 않은 연산자 입니다.");
+                continue;
             }
 
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
@@ -41,8 +44,6 @@ public class Calculator {
             if (exitbox.equals("exit")) {
                 System.out.println("장비를 정지합니다.");
                 break;
-            } else {
-                continue;
             }
         }
     }
