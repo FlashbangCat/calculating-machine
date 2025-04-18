@@ -42,7 +42,6 @@ public class Calculator {
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
             String exitbox = sc.next();
             if (exitbox.equals("exit")) {
-                System.out.println("장비를 정지합니다.");
                 break;
             }
         }
