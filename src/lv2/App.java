@@ -1,6 +1,6 @@
 package lv2;
 
-import java.util.LinkedList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class App {
@@ -35,7 +35,7 @@ public class App {
             try {
                 Integer result = cal.calculate();
                 System.out.println("값 = " + result);
-                cal.list.addLast(result);
+                cal.addLast(result);
                 System.out.println(cal.getList());
 
             } catch (ArithmeticException e){
@@ -44,6 +44,10 @@ public class App {
 
             } catch (NullPointerException e){
                 System.out.println("결과값이 NULL 일 수 없습니다.");
+                continue;
+
+            } catch (InputMismatchException e){
+                System.out.println("문자는 입력할수 없습니다.");
                 continue;
             }
 

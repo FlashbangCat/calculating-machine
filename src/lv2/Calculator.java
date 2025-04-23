@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class Calculator {
 
-    LinkedList<Integer> list = new LinkedList<>();
+    private LinkedList<Integer> list = new LinkedList<>();
 
     private int val1;
     private int val2;
@@ -54,7 +54,11 @@ public class Calculator {
         return list;
     }
 
-    public void setList(int posi,int cr) {
+    public void addLast(int result) {
+        list.addLast(result);
+    }
+
+    public void setList(int posi, int cr) {
         if (posi > 0 && posi <= list.size()){
             list.set(posi-1,cr);
         } else {
