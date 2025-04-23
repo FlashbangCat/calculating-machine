@@ -58,6 +58,7 @@ public class App {
                 cal.setList(posi,cr);
                 System.out.println(cal.getList());
             }
+
         }
     }
 }

@@ -60,5 +60,6 @@ public class Calculator {
         } else {
             System.out.println("자리가 잘못되었습니다.");
         }
+
     }
 }
