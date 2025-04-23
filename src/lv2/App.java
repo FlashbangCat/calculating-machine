@@ -46,9 +46,6 @@ public class App {
                 System.out.println("결과값이 NULL 일 수 없습니다.");
                 continue;
 
-            } catch (InputMismatchException e){
-                System.out.println("문자는 입력할수 없습니다.");
-                continue;
             }
 
             //무한 탈출
