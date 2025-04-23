@@ -9,10 +9,19 @@ public class Calculator {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
+
             System.out.print("첫 번째 숫자를 입력하세요: ");
             int intbox1 = sc.nextInt();
+            if (intbox1 < 0){
+                System.out.println("양의 정수만 받을수 있습니다.");
+                continue;
+            }
             System.out.print("두 번째 숫자를 입력하세요: ");
             int intbox2 = sc.nextInt();
+            if (intbox2 <0){
+                System.out.println("양의 정수만 받을수 있습니다.");
+                continue;
+            }
 
             System.out.print("사칙연산 기호를 입력하세요: ");
             char strbox = sc.next().charAt(0);
@@ -44,6 +53,7 @@ public class Calculator {
             if (exitbox.equals("exit")) {
                 break;
             }
+
         }
     }
 }
