@@ -15,9 +15,17 @@ public class App {
         while (re) {
             System.out.print("첫 번째 숫자를 입력하세요: ");
             int val1 = sc.nextInt();
+            if (val1 < 0){
+                System.out.println("양의 정수만 받을수 있습니다.");
+                continue;
+            }
             cal.setVal1(val1);
             System.out.print("두 번째 숫자를 입력하세요: ");
             int val2 = sc.nextInt();
+            if (val2 < 0){
+                System.out.println("양의 정수만 받을수 있습니다.");
+                continue;
+            }
             cal.setVal2(val2);
 
             System.out.print("사칙연산 기호를 입력하세요: ");
