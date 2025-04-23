@@ -53,6 +53,7 @@ public class Calculator {
             if (exitbox.equals("exit")) {
                 break;
             }
+
         }
     }
 }
